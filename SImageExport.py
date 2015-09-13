@@ -35,8 +35,11 @@ README = u'''              中兴天机(S291)开机画面(第一屏)导入、导
     只针对 ZTE S291 splash.mbn 做过有限测试
     因硬件和系统差异，刷机有风险，请务必细心操作，所有风险自行承担
 
-    http://www.chenwang.net
-    https://github.com/GameXG/SImage
+    https://github.com/SWQJueLian/SImage
+
+    Modifed By JueLian,Based on GameXG
+
+    fix windows can not work
 '''
 
 
@@ -44,17 +47,18 @@ import base64
 import json
 import pprint
 import sys
+import os
 
 __author__ = 'GameXG'
 
 IMG_OUT_DIR_PATH = 'img'
 
+ABS_DIR = sys.argv[1]#sys.path[0]+os.path.sep+'splash.mbn'
+
 import mmap
 import struct
-import os
 
 def export(fname = 'splash.mbn'):
-
     if not  os.path.isfile(fname):
         print (u'不存在文件 %s '%fname)
         return
@@ -111,17 +115,12 @@ def export(fname = 'splash.mbn'):
 
 if __name__ == '__main__':
     print(README)
-    if len(sys.argv)>1:
-        for fname in sys.argv[1:]:
-            try:
-                export(fname)
-            except Exception ,e:
-                pprint.pprint(e)
-    else:
-            try:
-                export()
-            except Exception ,e:
-                pprint.pprint(e)
+    try:
+        export(ABS_DIR)
+    except Exception ,e:
+        pprint.pprint(e)
+    print("input anykey to exit....")
     raw_input()
+
 
 
