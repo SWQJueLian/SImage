@@ -3,7 +3,9 @@ image 搜索工具，目前只打算支持 ZTE s291 开机画面 splash.mbn 搜�
 
 ##中兴天机(S291)开机画面(第一屏)导入、导出工具
 
-    SImageExport 可以将刷机包内 splash.mbn 文件内保存的BMP位图导出，修改后使用配套的 SImageImport 即可重新导入到 splash.mbn 文件内达到修改开机动画的目的。
+    SImageExport 可以将刷机包内 splash.mbn 文件内保存的BMP位图导出，
+
+	修改后使用配套的 SImageImport 即可重新导入到 splash.mbn 文件内达到修改开机动画的目的。
 
     目前 splash.mbn 内有标准开机第一屏图片及FTM模式开机图片，CM版本刷机包还有电量不足开机画面。
 
@@ -29,5 +31,7 @@ image 搜索工具，目前只打算支持 ZTE s291 开机画面 splash.mbn 搜�
     只针对 ZTE S291 splash.mbn 做过有限测试
     因硬件和系统差异，刷机有风险，请务必细心操作，所有风险自行承担
 
-    http://www.chenwang.net
-    https://github.com/GameXG/SImage
+	https://github.com/SWQJueLian/SImage
+
+##WINDOW 可执行文件下载地址
+[点我下载](http://pan.baidu.com/s/1mgMUd1A)
